@@ -4,11 +4,13 @@ Hanya SC sederhana untuk dorking google di termux
 <pre><code>
 python dorking.py --query <DORK> --page <JUMLAH> --time <WAKTU> --save <FILE>
 </code></pre>
-# Keterangan: 
-  --query = Dorknya\n
+# Keterangan:
+<pre><code>
+  --query = Dorknya
   --page = Jumlah url\n
   --time = Waktu jeda (pause)\n
   --save = nama file untuk menyimpan url
+</code></pre>
 # Examples:
 <pre><code>
 python dorking.py inurl:/page.php?id= --page 5 --time 5 --save examples.txt
