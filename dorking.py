@@ -1,6 +1,7 @@
-import os,sys,argparse
-from googlesearch import search
-from enum import Enum
+try:
+ import os,sys,argparse
+ from googlesearch import search
+except ModuleNotFoundError:os.system("pip install google")
 def Dorking(query,page,time,save):
     tmbh = 0
     for src in search(query, tld="com", lang="en", num=int(page), start=0, stop=None, pause=int(time)):
